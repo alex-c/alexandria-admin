@@ -1,0 +1,31 @@
+//Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+//Set up colors
+$buefy: #8c67ef;
+
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "buefy": ($buefy, $primary-invert),
+    "link": ($blue, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert)
+);
+
+// Links
+$link: $info;
+
+//Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+//General-purpose shadowing
+.shadowed {
+    box-shadow: 0px 0px 3px $dark;
+}
